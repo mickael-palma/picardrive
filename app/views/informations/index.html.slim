@@ -1,2 +1,68 @@
-h1 Informations#index
-p Find me in app/views/informations/index.html.slim
+.row
+  .span12
+    .hero-unit
+      h1 Picardrive
+      p 
+        | Plus besoin de taxi en picardie
+      .driver
+hr
+
+.row
+  .span4
+    .row
+      .span1= image_tag('who.png')
+      .span3    
+        h2 C'est quoi ?
+        p 
+          b PICARDRIVE
+          |  est une société de transport à la demande destinés:
+          ul 
+            li aux particuliers
+            li aux entreprises et professionnels
+            li aux associations
+            li aux personnes âgées et a mobilité reduite
+  
+  .span4
+    .row
+      .span1= image_tag('services.png')
+      .span3
+        h2 Nos services
+        p 
+          | Nous vous offrons une prestation sur mesure.
+        p 
+          | Vous choisissez le lieu, l'heure et le nombre de passagers et nous mettons à votre disposission des véhicules haut de gamme climatisés, avec chauffeurs diplomés.
+        p
+          | Nos desservons tous les départements de l'Oise et limitrophes ,Ile de France, 75, 77, 78,91, 92, 93, 94, 95.
+
+  .span4
+    .row
+      .span1= image_tag('benefits.png')
+      .span3
+        h2 Nos avantages
+        ul 
+          li Tarifs connus a l'avance
+          li Pas de supplement en cas d'embouteillage 
+          li Pas de supplement bagages
+          li Paiement CB  et AMEX a bord du vehicule
+          li Le vehicule vous est reservé.
+
+hr
+  .row
+    = render "reviews"
+
+hr
+  
+.row
+  #drivers= render 'drivers'
+  #prices= render 'prices'
+
+hr
+
+.row
+  #cars= render 'cars'
+
+hr
+  .row
+    = render 'contact'
+
+hr
